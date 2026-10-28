@@ -27,7 +27,7 @@ const CONTENT = {
 
   ],
   activities: [
-    { icon: "drum", photos: ["assets/musique-1.jpg","assets/musique-2.jpg","assets/musique-3.jpg","assets/musique-4.jpg"], video: "assets/concert.mp4", image: "assets/musique-3.jpg",
+    { icon: "drum", photos: ["assets/musique-1.jpg","assets/musique-2.jpg","assets/musique-3.jpg","assets/musique-4.jpg"], video: "assets/https://youtube.com/shorts/j38_9-k5cOo", image: "assets/musique-3.jpg",
       fr: { title: "Musique", desc: "J’ai la chance de pratiquer la batterie depuis 15 ans. J’ai participé à de nombreuses compétitions, notamment les finales de France en 2023, où j’ai remporté la coupe de France." },
       en: { title: "Music", desc: "I have been lucky enough to play the drums for 15 years. I took part in many competitions, including the 2023 French finals, where I won the French Cup." } },
     { icon: "ball", photos: ["assets/sport-1.jpg","assets/sport-2.jpg","assets/sport-3.jpg"], video: "", image: "assets/sport-2.jpg",
