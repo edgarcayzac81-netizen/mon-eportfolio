@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Edgar Cayzac – E-portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="brand" href="#accueil">EC</a>
+  <div class="lang" role="group" aria-label="Langue">
+    <button data-lang="fr">FR</button><span>|</span><button data-lang="en">EN</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#accueil" data-i18n="nav.home"></a>
+    <a href="#carriere" data-i18n="nav.career"></a>
+    <a href="#projets" data-i18n="nav.projects"></a>
+    <a href="#engagements" data-i18n="nav.commit"></a>
+    <a href="#mobilite" data-i18n="nav.mobility"></a>
+    <a href="#activites" data-i18n="nav.activities"></a>
+    <a href="#contact" data-i18n="nav.contact"></a>
+  </nav>
+</header>
+<main>
+<section id="accueil" class="dark hero">
+  <canvas id="flow" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <div>
+      <h1>Edgar Cayzac</h1>
+      <p class="sub" data-i18n="hero.sub"></p>
+      <div class="btns"><a class="btn" href="#projets" data-i18n="hero.cta1"></a><a class="btn ghost" href="#contact" data-i18n="hero.cta2"></a></div>
+    </div>
+    <div class="id">
+      <div class="stack">
+        <div class="frame"><img class="photo" src="assets/photo.jpg" alt="" data-i18n-alt="hero.alt" onerror="this.style.display='none'"></div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30C240 0 480 60 720 30S1200 0 1440 30V60H0Z"/></svg>
+</section>
+<section id="carriere"><h2 data-i18n="sec.career"></h2><div class="track" id="career" tabindex="0"></div><div class="cvs" id="cvs"></div></section>
+<section id="projets" class="sand2"><h2 data-i18n="nav.projects"></h2><h3 class="sub3" data-i18n="p.eng"></h3><div class="list" id="eng"></div><h3 class="sub3" data-i18n="p.personal"></h3><div class="mosaic" id="personal"></div><h3 class="sub3" id="skillsTitle" data-i18n="p.skills" hidden></h3><div class="badges" id="skills" hidden></div></section>
+<section id="engagements"><h2 data-i18n="nav.commit"></h2><div class="cascade" id="commit"></div></section>
+<section id="mobilite" class="dark">
+  <svg class="wave top" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30C240 60 480 0 720 30S1200 60 1440 30V0H0Z"/></svg>
+  <h2 data-i18n="nav.mobility"></h2>
+  <div class="mob"><div class="mapbox" id="mapbox"><svg id="mapEu" role="img" aria-label="Carte de l’Europe"></svg><div class="insets"><div class="inset"><svg id="mapUs" role="img" aria-label="États-Unis"></svg><span><i data-flag="us"></i><b data-i18n="mob.us"></b></span></div><div class="inset"><svg id="mapCa" role="img" aria-label="Canada"></svg><span><i data-flag="ca"></i><b data-i18n="mob.ca"></b></span></div></div><div class="tip" id="tip" role="status"></div></div>
+  <div><p id="mapInfo" data-i18n="mob.hint"></p><div class="badges" id="langs"></div><p class="note" id="mobProject"></p></div></div>
+</section>
+<section id="activites" class="sand2"><h2 data-i18n="nav.activities"></h2><div class="acts" id="acts"></div></section>
+<section id="contact"><h2 data-i18n="nav.contact"></h2><div class="squares" id="squares"></div></section>
+</main>
+<footer>© <span id="y"></span> Edgar Cayzac</footer>
+<div class="ov mp" id="mpanel" hidden role="dialog" aria-modal="true" aria-labelledby="mpTitle">
+  <div class="mpcard">
+    <button class="gx" id="mpClose" type="button" data-i18n-label="g.close">×</button>
+    <div id="mpImg"></div>
+    <div id="mpVid"></div>
+    <div class="mpbody"><h3 id="mpTitle"></h3><p id="mpText"></p></div>
+  </div>
+</div>
+<div class="ov gal" id="gal" hidden role="dialog" aria-modal="true" aria-labelledby="galTitle">
+  <button class="gx" id="galClose" type="button" data-i18n-label="g.close">×</button>
+  <div class="gmain">
+    <button class="gnav prev" id="galPrev" type="button" data-i18n-label="g.prev">‹</button>
+    <figure class="gfig"><img id="galImg" alt=""><div id="galVid" class="gvid" hidden></div><figcaption id="galCap"></figcaption></figure>
+    <button class="gnav next" id="galNext" type="button" data-i18n-label="g.next">›</button>
+  </div>
+  <div class="gbar"><span id="galTitle"></span><span id="galCount"></span></div>
+  <div class="gthumbs" id="galThumbs"></div>
+</div>
+<script src="js/translations.js"></script>
+<script src="js/content.js"></script>
+<script src="js/flags.js"></script>
+<script src="js/map-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
