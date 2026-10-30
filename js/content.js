@@ -1,6 +1,6 @@
 const CONTENT = {
   cv: { fr: "assets/cv-fr.pdf", en: "assets/cv-en.pdf" }, 
-  video: "assets/Elevator-pitch.mp4",
+  video: "https://youtu.be/8whFKA5vNRA",
   contact: { linkedin: "https://www.linkedin.com/in/edgar-cayzac-71a689437/",
     mailEnc: "ZWRnYXIuY2F5emFjODFAZ21haWwuY29t",
     telEnc: "KzMzIDYgNDggMTAgMTQgMDM="
